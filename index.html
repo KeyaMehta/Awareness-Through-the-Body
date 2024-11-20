@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness Through the Body</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e5;
+            color: #400000;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        header a {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #cc3300;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #cc3300;
+        }
+        ul {
+            margin: 10px 0 20px 20px;
+        }
+        .faq {
+            background-color: #ffd699;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .posters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .posters img {
+            max-width: 300px;
+            width: 100%;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .posters img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 20px;
+        }
+        .form-container {
+            background-color: #ffd699;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .form-container h3 {
+            color: #cc3300;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-container input[type="text"], 
+        .form-container input[type="email"], 
+        .form-container input[type="tel"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ff4d4d;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #cc3300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Awareness Through the Body</h1>
+        <p>By Ayesha Mehta and Neha Kothari</p>
+        <p><a href="https://awarenessthroughthebody.org/" target="_blank">Visit the Official Website</a></p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#posters">Posters</a>
+        <a href="#join">Join Now</a>
+    </nav>
+    <main class="content">
+        <section id="about" class="section">
+            <h2>About ATB</h2>
+            <p>Discover a deeper connection with yourself in a fast-paced world. Do you often feel driven by patterns that hold you back?</p>
+            <p>Join our ATB workshop to:</p>
+            <ul>
+                <li>Cultivate introspection and self-awareness</li>
+                <li>Break free from limiting patterns</li>
+                <li>Expand your inner world</li>
+                <li>Make empowering choices</li>
+            </ul>
+            <p>Through simple yet profound ATB activities, you'll enjoy:</p>
+            <ul>
+                <li> Develop clarity and inner peace </li>
+                <li>Enhance your emotional intelligence</li>
+                <li>Nurture a positive relationship with yourself</li>
+                <li>Smile and grow from within</li>
+            </ul>
+            
+        </section>
+        <section id="faq" class="section faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is ATB about?</h3>
+            <p>Activities that make you aware of the workings of your inner self—emotions, memories, thoughts, programs—and create harmony in your inner and outer world.</p>
+            <br>
+            <h3>What is ATB and Neuroplasticity?</h3>
+            <p>Blowing away decades of scientific dogma, the recently discovered "neuroplastic" nature of the brain means that our potential is not set at birth — we can actually strengthen and improve our brain in ways once believed impossible.
+            ATB is a Brain Workout.</p>
+            <h3>Is ATB permanent?</h3>
+            <p>ATB is not a technique. It is a whole language. Once you learn it, and use it and speak it, you can make it a part of yourself.</p>
+           
+ 
+        </section>
+        <section id="posters" class="section">
+            <h2>Posters</h2>
+            <div class="posters">
+                <img src="Posters/Poster 1.png" alt="Poster 1" class="poster">
+                <img src="Posters/Poster 2.png" alt="Poster 2" class="poster">
+                <img src="Posters/Poster 3.png" alt="Poster 3" class="poster">
+                <img src="Posters/Poster 4.png" alt="Poster 4" class="poster">
+                <img src="Posters/img 2.jpg" alt="Poster 5" class="poster">
+            </div>
+        </section>
+        <section id="join" class="section form-container">
+            <h3>Interested in Joining?</h3>
+            <h3>Contribution Details:</h3>
+            <p>Rs. 9000 before 20th September 2022</p>
+            <p>Rs. 12000 after 20th September 2022</p>
+            <p><strong>To enrol:</strong> Please GPay 9819779349 (or call for bank transfer information). PAYTM is not available.</p>
+            <p>Share a screenshot of the payment once done on 9819779349. Call Ayesha Mehta for any clarifications.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <div class="modal" id="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+    <footer>
+        <p>For more details, contact Ayesha Mehta: 9819779349</p>
+    </footer>
+    <script>
+        const posters = document.querySelectorAll('.poster');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modalImage');
+        const modalClose = document.getElementById('modalClose');
+
+        posters.forEach(poster => {
+            poster.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImage.src = poster.src;
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target !== modalImage) {
+                modal.style.display = 'none';
+           
